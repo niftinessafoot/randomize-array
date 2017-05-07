@@ -11,6 +11,8 @@ var newArray = randomizeArray(array);
 // it’s random.
 ```
 
+Returns a new array or undefined if the incoming argument is not a valid array.
+
 ## Tests
 ```bash
 npm test
@@ -18,8 +20,9 @@ npm test
 
 ## Contact
 Written by Matthew Smith
-Twitter: [@niftinessafoot](http://www.twitter.com/niftinessafoot)
-Web: [www.niftinessafoot.com](http://www.niftinessafoot.com/)
+
+- Twitter: [@niftinessafoot](http://www.twitter.com/niftinessafoot)
+- Web: [www.niftinessafoot.com](http://www.niftinessafoot.com/)
 
 ## License
 MIT
