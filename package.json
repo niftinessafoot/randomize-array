@@ -1,0 +1,27 @@
+{
+  "name": "js_randomize_array",
+  "version": "1.0.1",
+  "description": "Return a randomized version of the passed-in array.",
+  "main": "randomizeArray.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niftinessafoot/js_randomize_array.git"
+  },
+  "keywords": [
+    "javascript",
+    "array"
+  ],
+  "author": "Matthew Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niftinessafoot/js_randomize_array/issues"
+  },
+  "homepage": "https://github.com/niftinessafoot/js_randomize_array#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
