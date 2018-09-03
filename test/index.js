@@ -1,6 +1,6 @@
 var chai = require('chai'),
-  expect = require('chai').expect,
-  randomizeArray = require('../randomize_array_module');
+  expect = require('chai').expect;
+import randomizeArray from '../randomizeArray';
 
 describe('randomizeArray: generate three arrays to confirm randomness', function(){
   var array = [1,2,3,4,5,6,7,8,9,0],
