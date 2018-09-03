@@ -2,11 +2,12 @@
 JavaScript method taking an array and returning a new array with randomly reordered values.
 
 ## Usage
-UMD-wrapped for convenience. `require`, `define`, or call globally.
+New in 2.0.0: Converted to a native ES6 module.
 
 ```javascript
-var array = [1,2,3];
-var newArray = randomizeArray(array);
+import randomizeArray from './randomizeArray.js';
+const array = [1,2,3];
+const newArray = randomizeArray(array);
 // returns [2,1,3] or some variation of those three values.
 // it’s random.
 ```
