@@ -12,12 +12,12 @@
     "build": "rollup -c rollup.config.js -i src/index.ts",
     "build:prod": "npm run build && npm run types",
     "prepack": "npm run build:prod && npm run prep:umd",
+    "clean": "rm -rf dist/*",
+    "types": "tsc",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "clean": "rm -rf dist/*",
     "docs": "typedoc",
-    "types": "tsc",
-    "prep:umd": "mkdir -p ./dist/umd && echo '{\"type\":\"commonjs\"}'>dist/umd/package.json"
+    "prep:umd": "node ./scripts/init-umd-config.js"
   },
   "entry": "index.ts",
   "files": [
@@ -35,8 +35,8 @@
     },
     "./standalone": {
       "types": "./dist/types/index.d.ts",
-      "require": "./dist/umd/standalone.min.js",
-      "import": "./dist/esm/standalone.min.js",
+      "require": "./dist/umd/standalone.js",
+      "import": "./dist/esm/standalone.js",
       "default": "./dist/umd/legacy.js"
     },
     "./legacy": "./dist/umd/legacy.js"

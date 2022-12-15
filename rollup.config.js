@@ -32,16 +32,6 @@ export default {
         getBabelOutputPlugin({
           presets: [['@babel/preset-env', { modules: 'umd' }]],
         }),
-      ],
-      sourcemap: true,
-    },
-    {
-      file: 'dist/umd/standalone.min.js',
-      name: _C.PackageName,
-      plugins: [
-        getBabelOutputPlugin({
-          presets: [['@babel/preset-env', { modules: 'umd' }]],
-        }),
         terser(),
       ],
       sourcemap: true,
@@ -50,16 +40,6 @@ export default {
       // Transpiled modules (ESM) for individual use.
       // Suitable for standalone Node apps, WPA, and modern web pages.
       file: 'dist/esm/standalone.js',
-      format: 'esm',
-      plugins: [
-        getBabelOutputPlugin({
-          presets: ['@babel/preset-env'],
-        }),
-      ],
-      sourcemap: true,
-    },
-    {
-      file: 'dist/esm/standalone.min.js',
       format: 'esm',
       plugins: [
         getBabelOutputPlugin({
