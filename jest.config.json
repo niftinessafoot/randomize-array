@@ -1,5 +1,12 @@
 {
   "verbose": true,
   "testEnvironment": "jest-environment-jsdom",
-  "resetMocks": true
+  "resetMocks": true,
+  "extensionsToTreatAsEsm": [".ts", ".tsx"],
+  "transform": {
+    "^.+\\.[t|j]sx?$": [
+      "babel-jest",
+      { "configFile": "./jest.config.babel.json" }
+    ]
+  }
 }
