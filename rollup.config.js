@@ -31,6 +31,7 @@ export default {
       plugins: [
         getBabelOutputPlugin({
           presets: [['@babel/preset-env', { modules: 'umd' }]],
+          allowAllFormats: true,
         }),
         terser(),
       ],
