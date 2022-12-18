@@ -1,7 +1,7 @@
 {
-  "name": "@afoot/random-array",
-  "version": "0.1.1",
-  "description": "",
+  "name": "@afoot/randomize-array",
+  "version": "2.0.0",
+  "description": "Re-order an array’s elements with a random sort.",
   "author": "Matthew Smith <code@niftinessafoot.com> (https://www.niftinessafoot.com)",
   "keywords": [
     "module",
@@ -45,9 +45,11 @@
   "browserslist": [
     "defaults"
   ],
+  "homepage":"https://www.niftinessafoot.com",
+  "bugs":"https://github.com/niftinessafoot/randomize-array/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/niftinessafoot/"
+    "url": "https://github.com/niftinessafoot/randomize-array"
   },
   "type": "module",
   "devDependencies": {
