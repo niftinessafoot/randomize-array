@@ -1,29 +1,13 @@
-# Randomize Array
-JavaScript method taking an array and returning a new array with randomly reordered values.
+# randomize array
+Re-order an array’s elements with a random sort.
 
-## Usage
-New in 2.0.0: Converted to a native ES6 module.
-
-```javascript
-import randomizeArray from './randomizeArray.js';
-const array = [1,2,3];
-const newArray = randomizeArray(array);
-// returns [2,1,3] or some variation of those three values.
-// it’s random.
+## usage
+```js
+import (RandomizeArray) from '@afoot/randomize-array';
+const newArray = RandomizeArray([1,2,3]);
+console.log(newArray); // Returns [2,3,1] or an other random iteration.
 ```
-
-Returns a new array or undefined if the incoming argument is not a valid array.
-
-## Tests
-```bash
-npm test
-```
-
-## Contact
-Written by Matthew Smith
-
-- Twitter: [@niftinessafoot](http://www.twitter.com/niftinessafoot)
-- Web: [www.niftinessafoot.com](http://www.niftinessafoot.com/)
-
-## License
-MIT
+## license
+[MIT](./LICENSE) © [Matthew Smith](http://www.niftinessafoot.com)
+## made with ❤️ and ☕️ by
+![Niftiness Afoot!](https://gist.githubusercontent.com/niftinessafoot/2dba588395cb557293d5f09aebcd2ab0/raw/770293c76bead4f0986ff959f3ea8880017d92c0/bot.svg?sanitize=true) [Matthew Smith(https://github.com/niftinessafoot)
